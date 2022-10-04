@@ -1,0 +1,573 @@
+
+*{
+   
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+/*HEADER-CABECERA, PRIMERA PARTE DEL INDEX*/
+
+header{
+    width: 100%;
+    background-color: black;
+
+}
+.divfondo{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.fondo{
+    width: 100%;
+    display: flex;
+    opacity: 100%;
+}
+
+.logo{
+    width: 200px;
+    position: absolute;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.675) ;
+    background-color: #202020;
+    background-image: linear-gradient(270deg, #202020 0%, #434343 24%, #606060 49%, #434343 75%, #141414 100%);
+
+    
+    
+    
+}
+
+.logo{
+    animation-name: logosaltando;
+    transition: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+
+@keyframes logosaltando {
+    0%{ opacity: initial;
+
+    }
+    40%{
+        transform: scale(150%);
+    }
+
+
+
+    80%{
+        transform: rotate3d(0turn);
+    }
+
+    100%{
+        transform: rotate3d(360turn);
+    }
+}
+h1,h2,h3,h4,h5,h6,p{
+
+    font-family: 'Griffy', cursive;
+    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Water Brush', cursive;
+}
+
+
+/*MAIN-PRESENTACION, PARTE 2 DEL INDEX*/
+
+.upbtn{
+    display: flex;
+    z-index: 100;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    line-height: 5px;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0);
+    animation-name: salto;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    margin-bottom: 20px;
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-radius: 50%;
+}
+
+.upbtn a{
+    display: flex;
+    justify-content: center;
+
+}
+
+@keyframes salto {
+    0%{transform: translateY(0%);}
+    40%{transform: translateY(30%);}
+
+}
+
+.upbtn a{
+
+    scroll-behavior: smooth;
+    z-index: 100;
+    background-color: rgb(0, 147, 233);
+}
+
+
+main{
+    display: flex;
+    padding: 20px;
+    height: fit-content;
+    background-color: #9e276c;
+background-image: linear-gradient(225deg, #9e276c 0%, #53356f 33%, #0f2d3f 66%, #020508 100%);
+
+    align-items: center;
+    
+}
+
+.titulo{
+    text-align: center;
+    padding: 10px 10px 20px 0;
+     color: white;
+    align-items: flex-start;
+   
+}
+
+.titulo img{
+
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40px;
+}
+
+.presentacion{
+    
+    color: white;
+    width: fit-content;
+    margin: auto;
+    font-size: 20px;
+}
+
+
+main img{
+
+    
+    display: flex;
+    position: relative;
+    width: 300px;
+    margin-right: 60px;
+    
+}
+
+section{
+    background-color: #2b2828;
+background-image: linear-gradient(253deg, #2b2828 0%, #1a1919 24%, #100f0f 49%, #030303 75%, #000000 100%);
+
+padding: 20px;
+height: fit-content;
+align-items: center;
+color: white;
+justify-content: center;
+
+}
+
+/*QUE TRABAJOS REALIZO*/ /*PARTE 3 DEL INDEX*/
+
+.servicios{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px 10px 20px 0;
+     color: white;
+   align-items: center;
+   font-size: 40px;
+
+}
+
+
+section .servicios-grid{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.servicios-grid div{
+    padding: 30px;
+    display: flex;
+    width: 400px;
+    height: fit-content;
+    align-items: center;
+}
+.caja{
+    padding: 10px;
+    text-align: right;
+}
+
+.caja:hover{
+
+transition-duration: 1s;
+transform: scale(130%);
+
+}
+
+.caja img{
+margin:  10px;
+}
+
+.cajal img{
+    margin:  10px;
+    }
+    
+
+.cajal:hover{
+    
+    transition-duration: 1s;
+    transform: scale(130%);
+    
+    }
+
+.cajal{
+    padding: 10px;
+
+    text-align: left;
+
+}
+.servicios-grid div img{
+    
+    padding: 5px;
+    align-self: baseline;
+
+}
+
+h5{
+    font-size: 60px;
+
+}
+
+/* SECCION GALERIA, CON ENLACES, CUARTA PARTE DEL INDEX*/
+
+
+.introgaleria{
+
+    display: block;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    width: 100%;
+    background-color: #9e276c;
+    background-image: linear-gradient(225deg, #9e276c 0%, #53356f 33%, #0f2d3f 66%, #020508 100%);
+    
+    color: white;
+    padding: 0 0 60px 0;
+}
+
+.introgaleria > h1{
+    padding: 40px 0 40px 0;
+    font-size: 80px;
+}
+
+.trabajos{
+    align-items: center;
+    width: 20%;
+    display: inline-block;
+    height: 350px;
+    border: 3px solid rgb(0, 0, 0);
+    background: rgb(127, 127, 127);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 15px rgb(233, 233, 233);
+}
+
+.contenido{
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.contenido > div div img{
+    width: 270px;
+    display: inlin;
+    padding: 0px 0 20px 0;
+}
+.contenido > div div{
+    display: inline-block;
+}
+
+.descripcion{
+
+    font-size: 20px;
+}
+
+
+
+/*Formulario*/
+
+.formulario{
+
+width: 100%;
+background-color: #2b2828;
+background-image: linear-gradient(253deg, #2b2828 0%, #1a1919 24%, #100f0f 49%, #030303 75%, #000000 100%);
+
+
+}
+
+.formulario{
+
+    padding: 60px 0px 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form{
+
+    width: 450px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.29);
+    box-sizing: border-box;
+    margin-top: auto;
+    border-radius: 10px;
+}
+
+form h2{
+
+  text-align: center;
+  margin-top: 15px;
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+input, textarea{
+
+    width: 90%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 5px;
+
+}
+
+textarea{
+
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 410px;
+    margin-left: 20px;
+}
+
+#boton{
+
+    background-color: black;
+    color: white
+    
+
+}
+
+
+#boton:hover{
+
+    cursor: pointer;
+   background-color: grey;
+   color: black;
+   font-size: 20px;
+}
+
+/*Footer*/
+
+footer{
+
+   width: 100%;
+   height: fit-content;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   background-color: #9e276c;
+background-image: linear-gradient(225deg, #9e276c 0%, #53356f 33%, #0f2d3f 66%, #020508 100%);
+
+   color: white;
+}
+
+footer > div{
+    padding: 0 25px 0 25px;
+    display: flex;
+    align-items: center;    
+}
+
+footer div img{
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+
+}
+
+.iconosredes{
+    padding: 30px;
+    
+
+
+}
+
+.iconosredes h2{
+    
+    font-size: 35px;
+    padding: 30px;
+}
+
+
+/*PAGINA 2 HTML- GALERIA DE TRABAJOS*/
+
+/*Navegador*/
+
+.cuerpo2{
+
+    background-color: #000000;
+}
+
+a{
+
+    text-decoration: none;
+    font-family: 'Griffy', cursive;
+    font-family: 'Nanum Pen Script', cursive;
+    font-family: 'Water Brush', cursive;
+    color: white;
+    font-size: 50px;
+    justify-content: center;
+
+}
+
+nav{
+
+    width: 100%;
+    height: 90px;
+    background-color: #202020;
+    background-image: linear-gradient(270deg, #202020 0%, #434343 24%, #606060 49%, #434343 75%, #141414 100%);
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.menu{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logosmall{
+
+width: 90px;
+    
+}
+
+/*MAIN-GALERIA*/
+
+.clientgrid2{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-basis: 80%;
+}
+.clientgrid2 figure{
+    width: 400px;
+    padding: 0px;
+    margin: 50px;
+    transition-duration: 1s;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.907) ;
+
+}
+
+.clientgrid2 figure:hover{
+    transform: scale(120%);
+}
+
+
+@media screen and (max-width: 480px) {
+
+header{
+
+    display: none;
+}
+
+.clientgrid2{
+
+    width: 270px;
+
+}
+
+.redes{
+
+    display: none;
+
+}
+
+.inicio{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0%;
+}
+
+.entrada{
+    padding: 0%;
+    font-size: 15px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.imagenmaining{
+
+        display: none;
+
+}
+
+h1{
+
+    text-align: center;
+    font-size: 20px;
+    padding: 0%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.secciones{
+
+    display: none;
+}
+.servicios{
+
+    display: none;
+}
+
+h5{
+
+    display: none;
+}
+
+.iconitos{
+
+    display: none;
+}
+
+.trabajos{
+
+    display: none;
+}
+
+
